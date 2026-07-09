@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Mon Site avec tailwin</title>
+   
+</head>
+<body>
+<div class="bg-[#fdf6ec] container">
+    <!-- En-tête -->
+     <header class="flex justify-between items-center bg-[#fff9f0] px-8 py-4 rounded-xl border border-[#f3e1ce]">
+  <div class="flex items-center gap-2 font-bold text-[#2b1f1d]">
+    <span class="bg-[#2b1f1d] text-white px-2 py-1 rounded-md text-xs font-mono">CB</span>
+    <span>Chocolatier Bakery</span>
+  </div>
+
+  <!-- Groupe Droite : Menu -->
+  <nav class="flex items-center gap-5 text-sm text-[#555555] hidden md:block">
+    <a href="#" class="hover:text-black">Menu</a>
+    <a href="#" class="hover:text-black">Our Story</a>
+    <a href="#" class="hover:text-black">Order</a>
+    <a href="#" class="hover:text-black">Contact</a>
+  </nav>
+  <!-- Menu téléphone -->
+  <div class="hover:text-black block md:hidden">
+  <a href="#" >Menu</a>
+  </div>
+</header>
+   
+    <!-- Section Principale (Hero) -->
+<section class="flex flex-col md:flex-row items-center gap-10 bg-[#fff1e0] p-8 md:p-12 rounded-[24px]">
+  
+  <!-- Texte de gauche -->
+  <div class="flex-1">
+    <span class="text-[#a64452] text-xs font-bold uppercase tracking-wider">
+      Small-batch pastries and chocolate
+    </span>
+    
+    <h1 class="text-[#2b1f1d] text-4xl md:text-5xl font-bold font-serif leading-[1.1] mt-3 mb-4">
+      Elegant bakery boxes,<br class="hidden md:inline"> made to order.
+    </h1>
+    
+    <p class="text-[#665a57] text-sm md:text-base leading-relaxed max-w-md mb-8">
+      Choose from polished cakes, chocolate tarts, croissants, and seasonal pastry trays prepared for pickup.
+    </p>
+    
+    <button class="bg-[#211513] hover:bg-black text-white text-sm font-semibold px-6 py-3 rounded-full transition-colors shadow-md">
+      Order now
+    </button>
+  </div>
+
+  <!-- Encadré Vidéo de droite -->
+  <div class="flex-1 w-full bg-[#edf1f0] min-h-[220px] md:min-h-[280px] rounded-[20px] flex flex-col justify-center items-center text-center p-6 border border-[#e0e6e4]">
+    <p class="text-[#2b1f1d] font-bold text-base md:text-lg">
+      Hero video /
+    </p>
+    <p class="text-[#2b1f1d] font-bold text-base md:text-lg">
+      ChocolatierCTA.mp4
+    </p>
+  </div>
+
+</section>
+<section class="hidden md:block max-w-7xl mx-auto p-8 bg-[#FAF6F0] p-6 font-sans">
+
+    <p class="text-[#8B4A54] text-xs font-bold uppercase">Most Ordered</p>
+  <h1 class="text-3xl font-bold mb-6">The three guests ask for first</h1>
+
+    <div class="grid
+                gap-4
+                grid-cols-1
+                sm:grid-cols-2
+                lg:grid-cols-4
+                auto-rows-[200px]">
+
+      <div class="bg-white-300 rounded-xl">
+      <div class="bg-[#F3F5F3] h-32 p-6 rounded-t-2xl"><div class="w-10 h-10 rounded-full bg-[#8C4653]"></div></div>
+      <div class="p-6">
+        <h3 class="font-bold">Midnight Ganache Tart</h3>
+        <p class="text-xs text-gray-500 my-2">Silky dark chocolate custard, cocoa sable crust, and smoked sea salt.</p>
+        <span class="font-bold text-sm">$12</span>
+      </div>
+    </div>
+
+      <div class="bg-white-300 rounded-xl">
+      <div class="bg-[#F3F5F3] h-32 p-6 rounded-t-2xl"><div class="w-10 h-10 rounded-full bg-[#B29665]"></div></div>
+      <div class="p-6">
+        <h3 class="font-bold">Vanilla Cloud Croissant</h3>
+        <p class="text-xs text-gray-500 my-2">Laminated butter pastry filled with vanilla cream and pearl sugar.</p>
+        <span class="font-bold text-sm">$8</span>
+      </div>
+    </div>
+    <div class="bg-white-300 rounded-xl">
+      <div class="bg-[#F3F5F3] h-32 p-6 rounded-t-2xl"><div class="w-10 h-10 rounded-full bg-[#758477]"></div></div>
+      <div class="p-6">
+        <h3 class="font-bold">Atelier Celebration Box</h3>
+        <p class="text-xs text-gray-500 my-2">Four polished mini cakes with rotating chocolate and fruit finishes.</p>
+        <span class="font-bold text-sm">$34</span>
+      </div>
+    </div>
+
+    </div>
+
+  </section>
+
+<section class="block md:hidden ">
+  <div class="bg-white-300 rounded-xl">
+      <div class="bg-[#F3F5F3] h-32 p-6 rounded-t-2xl"><div class="w-10 h-10 rounded-full bg-[#8C4653]"></div></div>
+      <div class="p-6">
+        <h3 class="font-bold">Midnight Ganache Tart</h3>
+        <p class="text-xs text-gray-500 my-2">Silky dark chocolate custard, cocoa sable crust, and smoked sea salt.</p>
+        <span class="font-bold text-sm">$12</span>
+      </div>
+    </div>
+    <div class="bg-white-300 rounded-xl">
+      <div class="bg-[#F3F5F3] h-32 p-6 rounded-t-2xl"><div class="w-10 h-10 rounded-full bg-[#B29665]"></div></div>
+      <div class="p-6">
+        <h3 class="font-bold">Vanilla Cloud Croissant</h3>
+        <p class="text-xs text-gray-500 my-2">Laminated butter pastry filled with vanilla cream and pearl sugar.</p>
+        <span class="font-bold text-sm">$8</span>
+      </div>
+    </div>
+</section>
+<section class="hidden md:block max-w-7xl mx-auto p-8 bg-[#FAF6F0] p-6 font-sans">
+
+    <p class="text-[#8B4A54] text-xs font-bold uppercase">Most Ordered</p>
+  <h1 class="text-3xl font-bold mb-6">The three guests ask for first</h1>
+
+    <div class="grid
+                gap-4
+                grid-cols-1
+                sm:grid-cols-2
+                lg:grid-cols-4
+                auto-rows-[200px]">
+
+      <div class="bg-white-300 rounded-xl">
+      <div class="bg-[#F3F5F3] h-32 p-6 rounded-t-2xl"><div class="w-10 h-10 rounded-full bg-[#8C4653]"></div></div>
+      <div class="p-6">
+        <h3 class="font-bold">Midnight Ganache Tart</h3>
+        <p class="text-xs text-gray-500 my-2">Silky dark chocolate custard, cocoa sable crust, and smoked sea salt.</p>
+        <span class="font-bold text-sm">$12</span>
+      </div>
+    </div>
+
+      <div class="bg-white-300 rounded-xl">
+      <div class="bg-[#F3F5F3] h-32 p-6 rounded-t-2xl"><div class="w-10 h-10 rounded-full bg-[#B29665]"></div></div>
+      <div class="p-6">
+        <h3 class="font-bold">Vanilla Cloud Croissant</h3>
+        <p class="text-xs text-gray-500 my-2">Laminated butter pastry filled with vanilla cream and pearl sugar.</p>
+        <span class="font-bold text-sm">$8</span>
+      </div>
+    </div>
+    <div class="bg-white-300 rounded-xl">
+      <div class="bg-[#F3F5F3] h-32 p-6 rounded-t-2xl"><div class="w-10 h-10 rounded-full bg-[#758477]"></div></div>
+      <div class="p-6">
+        <h3 class="font-bold">Atelier Celebration Box</h3>
+        <p class="text-xs text-gray-500 my-2">Four polished mini cakes with rotating chocolate and fruit finishes.</p>
+        <span class="font-bold text-sm">$34</span>
+      </div>
+    </div>
+    <div class="bg-white-300 rounded-xl">
+      <div class="bg-[#F3F5F3] h-32 p-6 rounded-t-2xl"><div class="w-10 h-10 rounded-full bg-[#758477]"></div></div>
+      <div class="p-6">
+        <h3 class="font-bold">Atelier Celebration Box</h3>
+        <p class="text-xs text-gray-500 my-2">Four polished mini cakes with rotating chocolate and fruit finishes.</p>
+        <span class="font-bold text-sm">$34</span>
+      </div>
+    </div>
+    <div class="bg-white-300 rounded-xl">
+      <div class="bg-[#F3F5F3] h-32 p-6 rounded-t-2xl"><div class="w-10 h-10 rounded-full bg-[#758477]"></div></div>
+      <div class="p-6">
+        <h3 class="font-bold">Atelier Celebration Box</h3>
+        <p class="text-xs text-gray-500 my-2">Four polished mini cakes with rotating chocolate and fruit finishes.</p>
+        <span class="font-bold text-sm">$34</span>
+      </div>
+    </div>
+    <div class="bg-white-300 rounded-xl">
+      <div class="bg-[#F3F5F3] h-32 p-6 rounded-t-2xl"><div class="w-10 h-10 rounded-full bg-[#758477]"></div></div>
+      <div class="p-6">
+        <h3 class="font-bold">Atelier Celebration Box</h3>
+        <p class="text-xs text-gray-500 my-2">Four polished mini cakes with rotating chocolate and fruit finishes.</p>
+        <span class="font-bold text-sm">$34</span>
+      </div>
+    </div>
+    <div class="bg-white-300 rounded-xl">
+      <div class="bg-[#F3F5F3] h-32 p-6 rounded-t-2xl"><div class="w-10 h-10 rounded-full bg-[#758477]"></div></div>
+      <div class="p-6">
+        <h3 class="font-bold">Atelier Celebration Box</h3>
+        <p class="text-xs text-gray-500 my-2">Four polished mini cakes with rotating chocolate and fruit finishes.</p>
+        <span class="font-bold text-sm">$34</span>
+      </div>
+    </div>
+    <div class="bg-white-300 rounded-xl">
+      <div class="bg-[#F3F5F3] h-32 p-6 rounded-t-2xl"><div class="w-10 h-10 rounded-full bg-[#758477]"></div></div>
+      <div class="p-6">
+        <h3 class="font-bold">Atelier Celebration Box</h3>
+        <p class="text-xs text-gray-500 my-2">Four polished mini cakes with rotating chocolate and fruit finishes.</p>
+        <span class="font-bold text-sm">$34</span>
+      </div>
+    </div>
+    <div class="bg-white-300 rounded-xl">
+      <div class="bg-[#F3F5F3] h-32 p-6 rounded-t-2xl"><div class="w-10 h-10 rounded-full bg-[#758477]"></div></div>
+      <div class="p-6">
+        <h3 class="font-bold">Atelier Celebration Box</h3>
+        <p class="text-xs text-gray-500 my-2">Four polished mini cakes with rotating chocolate and fruit finishes.</p>
+        <span class="font-bold text-sm">$34</span>
+      </div>
+    </div>
+    <div class="bg-white-300 rounded-xl">
+      <div class="bg-[#F3F5F3] h-32 p-6 rounded-t-2xl"><div class="w-10 h-10 rounded-full bg-[#758477]"></div></div>
+      <div class="p-6">
+        <h3 class="font-bold">Atelier Celebration Box</h3>
+        <p class="text-xs text-gray-500 my-2">Four polished mini cakes with rotating chocolate and fruit finishes.</p>
+        <span class="font-bold text-sm">$34</span>
+      </div>
+    </div>
+
+    </div>
+
+  </section>
+
+
+ <!-- mon footer-->
+    <footer class="bg-white rounded-2xl p-6 flex flex-col md:flex-row justify-between items-center gap-4 border border-gray-100 shadow-sm">
+  
+  <div class="hidden md:block text-center md:text-left">
+    <span class="text-[#a64452] text-xs font-bold uppercase tracking-wider block">Cart</span>
+    <h4 class="text-[#2b1f1d] font-bold text-lg">Your bakery cart</h4>
+    <p class="text-gray-500 text-sm mt-1">
+      2 x Midnight Ganache Tart &bull; 1 x Vanilla Cloud Croissant &bull; <span class="text-gray-400">3 items selected</span>
+    </p>
+  </div>
+
+  <button class="hidden md:block bg-[#211513] text-white font-semibold px-6 py-2.5 rounded-full w-full md:w-auto">
+    Checkout
+  </button>
+  <button class="block md:hidden bg-[#211513] text-white font-semibold px-6 py-2.5 rounded-full w-full md:w-auto">
+   Added to your cart! See cart here 
+  </button>
+</footer>
+</div>
+
+</body>
+</html>
